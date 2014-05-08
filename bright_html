@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<style type = "text/css">
+	@font-face{
+				font-family: Univers45Light;
+				font-style: normal;
+				src: url("univers-45-light.ttf");
+	}
+	
+	body#page_body {
+				background: #FFFFFF;
+				margin: 0px 0px 0px 0px;
+				padding: 0px;	
+				text-align: center;
+				
+	}
+	
+	div#container {
+				position: relative;
+	}
+	
+	div#header	{
+				background-color: #009DDA;
+				width: 100%;
+				height: 60px;
+				right: 0px;
+				top: 0px
+				position: relative;
+	}
+	/*main content style*/
+	div#main_content {
+				border-left: 1px solid  #C2DDF2;
+				border-right: 1px  solid #C2DDF2;
+				box-shadow: 0px 0px 2px 0px #CCCCCC;
+				height: auto;
+				margin: 0px auto;
+				width: 1000px;
+				padding-top: 200px;
+				font-family: Univers45Light,Verdana;
+				overflow: hidden;
+
+	}
+	
+	div#up_image {
+				height: 205px;
+				margin-left: 136px;
+				position: absolute;
+				top: 45px;
+				width: 720px;
+				border: 0px;
+	}
+	
+	div#content_left {
+				float: left;
+				border-right: 1px  solid #D8D3D8;
+				width: 624px;
+				padding-left: 24px;
+				padding-right: 12px;	
+				text-align: left;
+				line-height: 130%;
+				height: auto;
+				word-wrap: normal;
+				
+	}
+	
+	div#content_right {
+				float: right;
+				height: auto;
+				width: 336px;
+	}
+	
+	div#up_block {
+				border-bottom: 1px solid #D8D3D8;
+				height: 192px;
+				padding-top: 22px;
+				width: 276px;
+				margin: 0 auto;
+				background-image: url("block_background.png");
+				background-repeat: no-repeat;
+	}
+	
+	div#up_block_text {
+				text-align: center;
+				font-size: 19px;
+				font-weight: bold;
+				width: 240px;
+				padding-left: 32px;
+				line-height: 23px;
+				color: #424242;
+	}
+	
+	input#request_button {
+				background: url("request_button.png");
+				background-repeat: no-repeat;
+				width: 233px;
+				height: 39px;
+				cursor: pointer;
+				border: none;
+				position: relative;
+				top: 20px;
+	}
+	
+	div#down_block {
+				border-bottom: 1px solid #D8D3D8;
+				height: 204px;
+				padding-top: 24px;
+				width: 276px;
+				margin: 0 auto;
+				margin-top: 60px;
+	}
+	
+ 	div#down_block_text1 {
+				text-align: left;
+				font-size: 12px;
+				font-weight: bold;
+				color: #797979;
+	}
+	
+	div#down_block_text2 {
+				
+				padding-top: 18px;
+				text-align: left;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 20px;
+				color: #333333;
+				float: right;
+				width: 184px;
+	}
+	
+	div#down_block_text3 {
+				
+				padding-top: 18px;
+				text-align: left;
+				font-size: 13px;
+				font-weight: light;
+				line-height: 18px;
+				color: #666666;
+				float:right;
+				width: 184px;
+				
+	}
+	
+	div#down_block_image {
+				float: left;
+				width: 60px;
+				height: 63px;
+				padding-left: 20px;
+				padding-top: 18px;
+				
+	}
+	
+	div#myPopupDialog {
+				width: 500px;
+				padding: 50px 50px 50px 50px;
+	}
+	
+	</style>
+</head>
+
+<script type="text/javascript">
+	function queryInfo(){
+	var firstname = document.getElementById('firstname').value;
+	var lastname = document.getElementById('lastname').value;
+	var email = document.getElementById('email').value;
+	var company = document.getElementById('company').value;
+	var phone = document.getElementById('phone').value;
+	var annual_revenue = document.getElementById('annual_revenue').value;
+	var additional_note = document.getElementById('additional_note').value;
+	alert("firstname:" + firstname + "\n"+
+	      "lastname:" + lastname + "\n"+
+		  "email:" + email + "\n"+
+		  "company:" + company + "\n"+
+		  "phone:" + phone + "\n"+
+		  "annual_revenue:" + annual_revenue + "\n"+
+		  "additional_note:" + additional_note + "\n"
+		  );
+		  
+	$(#myPopupDialog).remove();	  
+	}
+	
+	
+
+	
+</script>
+
+<body id = "page_body">
+
+<div id = "container">
+	<div id = "header">
+		<img src = "brightedge_header.png">
+	</div>	
+	
+	<div id = "left_edge">
+	</div>
+	
+	<div id = "right_edge">
+	</div>
+	
+	<div id = "main_content">
+		<div id = "up_image">
+			<img src = "brightedgeSEO.png">
+		</div>
+		
+		<div id = "content_left">
+			<h2 style = "font-weight:normal; color:#333333">Top 20 Recent BrightEdge SEO Innovations</h2>
+			<p style = "color:#666666">
+				At BrightEdge our top value is customer success, and we have developed tremendous innovations to help you stay ahead of the changes in search and content marketing. As a SaaS company, our software is delivered as a subscription and each month we bring innovative new technologies at no additional cost.
+			</p>
+			<p style = "color:#666666">
+				Please check out our latest Infographic that highlights the Top 20 BrightEdge Innovations from the past 12 months - all of these great features are available in your account today! [<a style="color: #009DDA; text-decoration:none;">Download a copy in PDF</a>]
+			</p>
+			<img src = "brightedgeSEO_description.png">
+		</div>
+		
+		
+		<div id= "content_right">
+			<div id = "up_block">
+				<div id = "up_block_text">Want to learn more about the BrightEdge Platfrom?</div>
+				  <div data-role="main" class="ui-content">
+						<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" ><img src = "request_button.png"/></a>
+						<div data-role="popup" id="myPopupDialog">
+						<form>
+							<div data-role = "FirstName">
+								<label class = "FirstName" style = "text-align:left;">
+								<span>First Name:</span>
+								<input id = "firstname" name = "FirstName" value = "" type="text">
+								</label>
+							</div>
+
+							<div data-role = "LastName">
+								<label class = "LastName" style = "text-align:left;">
+								<span>Last Name:</span>
+								<input id = "lastname" name = "LastName" value = "" type="text">
+								</label>
+							</div>
+
+							<div data-role = "Email">
+								<label class = "Email" style = "text-align:left;">
+								<span>Email Adress:</span>
+								<input id = "email" name = "Email" value = "" type="text">
+								</label>
+							</div>
+
+							<div data-role = "Company">
+								<label class = "Company" style = "text-align:left;">
+								<span>Company:</span>
+								<input id = "company" name = "Company" value = "" type="text">
+								</label>
+							</div>
+
+							<div data-role = "Phone">
+								<label class = "Phone" style = "text-align:left;">
+								<span>Phone:</span>
+								<input id = "phone" name = "Phone" value = "" type="text">
+								</label>
+							</div>
+
+							<div data-role = "Annual Revenue">
+								<label class = "Annual Revenue" style = "text-align:left;">
+								<span>Annual Revenue:</span>
+								<input id = "annual_revenue" name = "Annual Revenue" value = "" type="text">
+								</label>
+							</div>
+
+
+							<div data-role = "additional note">
+								<label class = "additional note" style = "text-align:left;">
+								<span>Additional Notes: </span>
+								<textarea id = "additional_note" name="comments" cols="25" rows="5"></textarea>
+								</label>
+							</div>
+
+							<div data-role = "submit">
+								<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back" onclick = "queryInfo();">Submit</a>
+							</div>
+						</form>
+						
+						</div>
+			</div>
+		
+			<div id = "down_block">
+				<div id = "down_block_text1">You might also be interested in...</div>
+				<div id = "down_block_image"><img src="brightedge_box.png" /></div>
+				<div id = "down_block_text2">We Hold these Truths to be Self Evident:</div>
+				<div id = "down_block_text3">Consectetur adipiscing elit. Sed ut orci ac neque tincidunt gravida non vitae tellus. Nam sem dui, varius.<br><a style="color: #009DDA; text-decoration:none;">Read more</a></div>
+				
+			</div>
+		</div>
+	</div>
+
+</div>	
+	
+
+
+
+</body>
+</html>
+
+
+
+
+
